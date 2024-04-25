@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.header {
+    padding: 20px 30px;
+}
+
+.header .logo h3 {
+    font-size: 20px;
+}
+
+
+.content {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+.content .left {
+    width: 200px;
+    background: #000000;
+    padding: 15px;
+}
+
+.content .left ul {
+    list-style: none;
+}
+
+.content .left ul li {
+    margin-bottom: 20px;
+}
+
+.content .left ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.content .left ul li a.active {
+    border: 2px solid lightblue;
+}
+
+.content .right {
+    width: 900px;
+    padding: 15px;
+}
+
+.content .right {
+    width: 900px;
+    padding: 15px;
+    background: #000000;
+}
+
+.content .right .livres .menu-principale {
+    background: #000000;
+}
+
+.content .right .livres .menu-principale .option {
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+}
+
+.content .right .livres .menu-principale .option .menu {
+    display: flex;
+    gap: 20px;
+} 
+
+.content .right .livres .menu-principale .option .menu .col {
+    position: relative;
+}
+
+.content .right .livres .menu-principale .option .menu .col .modal-menu {
+    width: 250px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 120px;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    visibility: hidden;
+}
+
+.content .right .livres .menu-principale .option .menu .col .modal-menu .image {
+    width: 150px;
+    height: 130px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .right .livres .menu-principale .option .menu .col .modal-menu .add-lien {
+    width: 100%;
+    display: grid;
+    height: 100px;
+}
+
+.content .right .livres .menu-principale .option .menu .col .modal-menu .add-lien a {
+    width: 100%;
+    height: 30px;
+    background: red;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .right .livres .option .btn button {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content .right .livres .option .lien {
+    display: grid;
+    width: 200px;
+}
+
+.content .right .livres .option .lien a {
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    background: lightblue;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.content .right .livres .livres-plusieurs-lecture {
+    margin-top: 30px;
+    background: #000000;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body {
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .slides {
+    display: flex;
+    gap: 20px;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .slides .slide {
+    width: 200px;
+    height: 250px;
+    background: lightblue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .slides .slide .image {
+    width: 100%;
+    height: 150px;
+    background: red;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .slides .slide .name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .slides .slide .desc {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .voir-autres {
+    margin-top: 30px;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .voir-autres a {
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
