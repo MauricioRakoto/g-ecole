@@ -50,10 +50,11 @@ body {
     color: #ffffff;
     width: 100%;
     height: 30px;
-    display: block;
+    display: flex;
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 5px;
+    gap: 20px;
 }
 
 .content .left ul li a.active {
@@ -67,8 +68,16 @@ body {
 }
 
 .content .right .livres .menu-principale {
-    background: #c86d0e;
+    background: url('../images/bg-livre2.jfif');
+    background-size: auto;
+    width: 100%;
+    height: 400px;
 }
+
+.content .right .livres .menu-principale.emprunt {
+    background: url('../images/bg-emprunt.jpg');
+}
+
 
 .content .right .livres .menu-principale .title,
 .content .right .livres .livres-plusieurs-lecture .title {
@@ -85,10 +94,29 @@ body {
 }
 
 .content .right .livres .menu-principale .option {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     margin: 30px 20px;
     padding-bottom: 20px;
+}
+
+.content .right .livres .menu-principale .option .button a {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c86d0e;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 4px solid #c86d0e;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .content .right .livres .menu-principale .option .menu {
@@ -197,6 +225,14 @@ body {
     width: 100%;
     height: 150px;
     background: #4f3939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .right .livres .livres-plusieurs-lecture .body .slides .slide .image img {
+   width: 100PX;
+    height: 100px;
 }
 
 .content .right .livres .livres-plusieurs-lecture .body .slides .slide .name {
@@ -225,4 +261,60 @@ body {
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
+}
+
+
+
+
+.content .right .livres .listes-emprunts {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    background: #c86d0e;
+    padding: 10px 20px;
+}
+
+.content .right .livres .listes-emprunts .listes {
+    width: 100%;
+    Margin-top: 40px;
+}
+
+.content .right .livres .listes-emprunts .listes .liste {
+    width: 100%;
+    height: 260px;
+    background: #480909;
+    padding: 20PX;
+    border-radius: 15PX;
+    margin-bottom: 30px;
+}
+
+.content .right .livres .listes-emprunts .listes .liste .title {
+    width: 100%;
+    height: 35px;
+    background: black;
+    padding: 5px 10PX;
+    border-radius: 8px;
+}
+
+.content .right .livres .listes-emprunts .listes .liste .body {
+    width: 100%;
+    height: 60px;
+    background: black;
+    padding: 5px 10PX;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.content .right .livres .listes-emprunts .listes .center {
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.content .right .livres .listes-emprunts .listes .center .data {
+    width: 48%;
 }
